@@ -1,7 +1,76 @@
-## Would you like to work with us? Apply [here](https://app.pipefy.com/public_form/840222)!
+# Repositório do Back-end Looqbox Challenge
+Repositório criado com a finalidade de entregar o desafio de Backend da Looqbox.
+
+
+### Sobre o desafio:
+Foi criado um microsservice utilizando a API externa PokeAPI.co. Ele fornece endpoints de consulta que podem retornar a resposta tanto em ordem alfabética como pela quantidade de caracteres em ordem crescente. Os algoritmos de <b>SORTING</b> foram feitos sem o uso de qualquer biblioteca utilizando apenas bubble sort. Na resposta da API também é mostrada um highlight no nome Pokemon onde representa a substring.
+
+### Integração:
+O projeto é integrado com a API PokeAPI. Mais informações no link baixo:
+```
+https://pokeapi.co/
+```
+
+## Screenshots:
+
+#### Consultas:
+
+```
+GET 
+v1/api/pokemon/ala
+```
+![screenshot-1](/looqbox-backend-challenge/screenshots/default1.png "screenshot 1")
+
+```
+GET 
+v1/api/pokemon/alph/ala
+```
+![screenshot-2](/looqbox-backend-challenge/screenshots/alph1.png "screenshot 2")
+
+```
+GET 
+v1/api/pokemon/length/ala
+```
+![screenshot-3](/looqbox-backend-challenge/screenshots/length.png "screenshot 3")
+
+#### Testes:
+
+![screenshot-4](/looqbox-backend-challenge/screenshots/junit-test.png "screenshot 4")
+
+## Tecnologias utilizadas
+#### - Frameworks e linguagens-
+* Java 17; 
+* Spring Framework 3.1.0;
+* Gradle;
+* jUnit;
+* Docker;
+* Lombok;
+
+## Docker
+
+1- Após clonar o repositório, execute o comando gradle para buildar o projeto:
+```
+./gradlew build
+```
+
+2- Após buildar o projeto, crie a imagem Docker executando o comando abaixo:
+```
+docker build -t looqbox:latest .
+```
+
+3- Após o processo de criação de imagem finalizar, execute-a para iniciar o container com o comando abaixo:
+```
+docker run -p 8080:8080 looqbox:latest .
+```
+
+
+
+
+
+### Would you like to work with us? Apply [here](https://app.pipefy.com/public_form/840222)!
 
 # Looqbox Backend Challenge
-![Looqbox](https://github.com/looqbox/looqbox-backend-challenge/blob/master/logo.png)
+![Looqbox](logo.png)
 
 ## Challenge
 In this challenge you will need to build a **Microservice** using the stack below and a provided api.
