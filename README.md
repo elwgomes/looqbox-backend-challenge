@@ -1,4 +1,4 @@
-### Would you like to work with us? Apply [here](https://app.pipefy.com/public_form/840222)!
+## Would you like to work with us? Apply [here](https://app.pipefy.com/public_form/840222)!
 
 # Looqbox Backend Challenge
 ![Looqbox](https://github.com/looqbox/looqbox-backend-challenge/blob/master/logo.png)
